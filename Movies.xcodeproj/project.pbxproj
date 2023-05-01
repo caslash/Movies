@@ -19,7 +19,8 @@
 		2E8031B829FF3B12009B7C4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2E8031BA29FF3B13009B7C4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E8031BD29FF3B13009B7C4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2E8031C429FF3E49009B7C4C /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		2EC0F3F229FF4409009AB39B /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		2EC0F3F329FF4431009AB39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +53,9 @@
 		2E8031B529FF3B12009B7C4C /* Movies */ = {
 			isa = PBXGroup;
 			children = (
-				2E8031C429FF3E49009B7C4C /* Config.xcconfig */,
 				2E8031B629FF3B12009B7C4C /* MoviesApp.swift */,
+				2EC0F3F429FF455D009AB39B /* Resources */,
 				2E8031B829FF3B12009B7C4C /* ContentView.swift */,
-				2E8031BA29FF3B13009B7C4C /* Assets.xcassets */,
 				2E8031BC29FF3B13009B7C4C /* Preview Content */,
 			);
 			path = Movies;
@@ -67,6 +67,16 @@
 				2E8031BD29FF3B13009B7C4C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2EC0F3F429FF455D009AB39B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2E8031BA29FF3B13009B7C4C /* Assets.xcassets */,
+				2EC0F3F229FF4409009AB39B /* Config.xcconfig */,
+				2EC0F3F329FF4431009AB39B /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +159,7 @@
 /* Begin XCBuildConfiguration section */
 		2E8031BF29FF3B13009B7C4C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EC0F3F229FF4409009AB39B /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -209,7 +220,7 @@
 		};
 		2E8031C029FF3B13009B7C4C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E8031C429FF3E49009B7C4C /* Config.xcconfig */;
+			baseConfigurationReference = 2EC0F3F229FF4409009AB39B /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -273,6 +284,7 @@
 				DEVELOPMENT_TEAM = 3S8XC6A264;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Movies/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Movie Match";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -307,6 +319,7 @@
 				DEVELOPMENT_TEAM = 3S8XC6A264;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Movies/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Movie Match";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
