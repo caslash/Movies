@@ -39,3 +39,7 @@ Thumbs.db
 # Secrets #
 ######################
 *.xcconfig
+
+# Misc #
+######################
+Movies.xcodeproj/xcuserdata/cameronslash.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
